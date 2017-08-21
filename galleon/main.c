@@ -20,11 +20,13 @@ int main(int argv, char** argc) {
   galleonCard_hp
   galleonCard_at
   galleonCard_ag
+  galleonCard_Name
 
-  galleonCard_getAttackFront
-  galleonCard_getAttackMiddle
-  galleonCard_getAttackBack
-  galleonCard_getAttackSkill
+  GalleonAttack *attackFront = galleonCard_getAttackFront
+  GalleonAttack *attackMiddle = galleonCard_getAttackMiddle
+  GalleonAttack *attackBack = galleonCard_getAttackBack
+  GalleonAttack *attackSkill = galleonCard_getAttackSkill
+
 
 
   galleonDeck_setValue(eastDeck, 0, 0, newGalleonCard(..));
