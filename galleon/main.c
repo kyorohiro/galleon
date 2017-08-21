@@ -8,7 +8,14 @@ int main(int argv, char** argc) {
 
   GalleonDeck *eastDeck = galleon_getDeckEast();
   GalleonDeck *westDeck = galleon_getDeckWest();
-
+  GalleonCard *card = newGalleonCard(..)
+  galleonCard_setRarity
+  galleonCard_setCost
+  galleonCard_setAttribute
+  galleonCard_setPlacement
+  galleonCard_setRestriction
+  galleonCard_setAbility
+  galleonCard_setSex
 
   galleonDeck_setValue(eastDeck, 0, 0, newGalleonCard(..));
   galleon_start(galleon);
