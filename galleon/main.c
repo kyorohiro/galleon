@@ -21,6 +21,11 @@ int main(int argv, char** argc) {
   galleonCard_at
   galleonCard_ag
 
+  galleonCard_getAttackFront
+  galleonCard_getAttackMiddle
+  galleonCard_getAttackBack
+  galleonCard_getAttackSkill
+
 
   galleonDeck_setValue(eastDeck, 0, 0, newGalleonCard(..));
   galleon_start(galleon);
