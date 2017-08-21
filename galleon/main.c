@@ -36,9 +36,13 @@ int main(int argv, char** argc) {
   galleonAttack_setRange(f1 f2 f3, m1, m2, m3 ,b1, b2, b3);
 
   galleonDeck_setValue(eastDeck, 0, 0, newGalleonCard(..));
-  galleon_start(galleon);
+  GalleonBattleInfo *info =  galleon_calc(galleon);
 
+  for(int i=0;galleonBattleInfo_length();i++) {
+    GalleonBattleDate * data = galleonBattleInf(i);
+    printf(data->text);
+    showInfo(printf(data));
 
-  */
+   */
   return 0;
 }
