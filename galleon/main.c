@@ -27,7 +27,13 @@ int main(int argv, char** argc) {
   GalleonAttack *attackBack = galleonCard_getAttackBack
   GalleonAttack *attackSkill = galleonCard_getAttackSkill
 
-
+  galleonAttack_setTypeRange(*attackFront, );// absolute, relative
+  galleonAttack_setTypeAttribute(*attackFront, );// black white red blue green
+  galleonAttack_setTypeEffect(*attackFront, );// absolute, relative
+  galleonAttack_setProbability //
+  galleonAttack_setCriticalRate
+  galleonAttack_setEffectFactor
+  galleonAttack_setRange(f1 f2 f3, m1, m2, m3 ,b1, b2, b3);
 
   galleonDeck_setValue(eastDeck, 0, 0, newGalleonCard(..));
   galleon_start(galleon);
