@@ -5,6 +5,7 @@
 int main(int argv, char** argc) {
   /*
   Galleon* galleon = initGalleon(newGalleon(), MAX_COST);
+  galleon_setSeed(galleon, 100);// 
 
   GalleonDeck *eastDeck = galleon_getDeckEast();
   GalleonDeck *westDeck = galleon_getDeckWest();
