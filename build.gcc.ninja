@@ -1,0 +1,25 @@
+#
+# Wins
+# cmd = cmd /c
+
+# Mac
+# cmd =
+sep = /
+cmd =
+objExt= o
+appExt= out
+objLib = a
+cc = cc
+ar = ar
+
+# -I..${sep}..${sep}cgame
+rule obj
+  command=${cmd} ${cc} -c $in -o $out -I. -I../cgame
+rule test
+  command=${cmd} ${cc} $in -o $out
+rule lib
+  command=${cmd} ${ar} rcs $out $in ..${sep}cgame${sep}core${sep}libcore.a
+rule exe
+  command=${cmd} ${cc} -o $out $in ..${sep}cgame${sep}core${sep}libcore.a
+
+subninja galleon${sep}build.ninja
