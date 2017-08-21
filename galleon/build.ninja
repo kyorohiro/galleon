@@ -1,4 +1,3 @@
 
-build galleon/capp.${objExt}: obj galleon/capp.c
 build galleon/main.${objExt}: obj galleon/main.c
-build galleon/main.${appExt}: exe galleon/main.${objExt} galleon/capp.${objExt}
+build galleon/main.${appExt}: exe galleon/main.${objExt}

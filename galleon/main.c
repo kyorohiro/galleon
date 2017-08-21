@@ -16,6 +16,7 @@ int main(int argv, char** argc) {
   galleonCard_setRestriction
   galleonCard_setAbility
   galleonCard_setSex
+  galleonCard_gauge
 
   galleonDeck_setValue(eastDeck, 0, 0, newGalleonCard(..));
   galleon_start(galleon);
